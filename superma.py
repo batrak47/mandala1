@@ -1,0 +1,122 @@
+
+import turtle  # import turtle 
+
+s=turtle.Turtle() 
+turtle.Screen().bgcolor('navy') 
+
+def curve(value): #curve function
+    for i in range(value):  
+        s.right(1) 
+        s.forward(1)
+        
+s.penup() 
+s.setposition(0,43)
+s.pendown() 
+s.begin_fill() 
+s.pencolor('black') 
+s.fillcolor('maroon') 
+s.pensize(3) 
+
+
+#logo outline 
+s.forward(81.5) 
+s.right(49.4) 
+s.forward(58)  
+s.right(81.42)
+s.forward(182) 
+s.right(98.36) 
+s.forward(182) 
+s.right(81.42) 
+s.forward(58)  
+s.right(49.4)
+s.forward(81.5) 
+s.end_fill() 
+s.penup()  
+
+#logo filling 
+
+s.setposition(38,32) 
+s.pendown() 
+s.begin_fill()  
+s.fillcolor('gold') 
+s.forward(13) 
+s.right(120) 
+s.forward(13) 
+s.right(120) 
+s.forward(13) 
+s.end_fill() 
+s.penup() 
+
+#first part 
+s.setposition(81.5,25) 
+s.pendown() 
+s.begin_fill() 
+s.right(210) 
+s.forward(25) 
+s.right(90) 
+s.forward(38) 
+s.right(45) 
+s.circle(82,90)
+s.left(90) 
+s.circle(82,60) 
+curve(61)
+s.left(90) 
+s.forward(57) 
+s.left(90) 
+s.forward(32) 
+s.end_fill() 
+s.penup()  
+s.home() 
+
+#second part 
+s.setposition(-69,-38) 
+s.pendown()
+s.begin_fill()
+curve(20)
+s.forward(33)
+s.left(10)
+s.circle(82,20)
+curve(30)
+s.forward(10)
+s.right(110)
+curve(40)
+s.right(10)
+s.circle(50,10)
+curve(45)
+s.right(5)
+s.forward(45)
+s.end_fill()
+s.penup()
+s.home()
+
+#third part
+s.setposition(20,-100)
+s.pendown()
+s.begin_fill()
+s.right(135)
+s.forward(27)
+s.right(90)
+s.forward(27)
+s.right(135)
+s.forward(38.18)
+s.end_fill()
+s.penup()
+s.home()
+
+#fourth part 
+s.setposition(-57,32)
+s.pendown()
+s.begin_fill()
+s.right(180)
+s.forward(18)
+s.left(45)
+s.forward(44)
+s.left(80)
+s.forward(15)
+s.left(130)
+curve(40)
+s.forward(20
+          )
+#end 
+s.end_fill()
+turtle.exitonclick() 
